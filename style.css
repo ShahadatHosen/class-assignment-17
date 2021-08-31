@@ -1,0 +1,595 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+
+img{
+    max-width: 100%;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* start hedder section */
+.heddersectiom{
+
+    background: black;
+}
+
+.hedderlogo{
+
+    width: 6%;
+    padding: 4px 0px;
+    float: left;
+}
+
+.hedderlogo img{
+
+}
+
+.heddermenu{
+
+    width: 70%;
+    text-align: right;
+    float: right;
+}
+
+.heddermenu ul{
+
+
+    
+}
+.heddermenu ul li {
+
+    display: inline-block;
+}
+.heddermenu ul li a{
+    
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heddermenu ul li::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    transition: .4s;
+}
+.heddermenu ul li:hover:before{
+    width: 100%;
+}
+
+.heddermenu ul li ul li:hover > a{
+    background: white;
+
+}
+
+.heddermenu ul li{
+    position: relative;
+}
+
+
+
+.heddermenu ul li ul {
+    position: absolute;
+    left: -14px;
+    background: black;
+    top: 122%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+   transform-origin: top center;
+    width: 150px;
+}
+.heddermenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.heddermenu ul li ul li {
+
+    display: block;
+    color: black;
+}
+
+.heddermenu ul li ul li a{
+
+    
+
+}
+
+.heddermenu ul li ul li a:hover{
+    
+   
+    color: black;
+    
+
+}
+
+
+/* bannae section */
+
+.bannarsection{
+    background-image: url(https://i.postimg.cc/XJ9nyjhf/a0c6042d4612d7adf44692fffac7e082.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 0px;
+}
+
+.bannarconteny{
+
+}
+
+.bannarconteny h1{
+
+    font-size: 33px;
+    padding: 10px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.bannarconteny p{
+
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.cilick {
+    text-decoration: none;
+    padding: 15px 52px;
+    background: white;
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-right: 14px;
+   
+}
+
+.cilick::before{
+
+    content:'' ;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.4s;
+   
+}
+.cilick:hover{
+    color: white;
+}
+
+.cilick:hover::before{
+    width: 100%;
+   
+    
+ }
+
+ .batton {
+    padding-bottom: 20px;
+}
+ 
+
+/* about section */
+
+.aboutsecttion{
+
+    background: #87a471;
+}
+
+.aboutcontent{
+
+}
+
+.contenthedding{
+
+    text-align: center;
+    
+}
+
+.contenthedding h1{
+    color: white;
+    padding: 15px 0px;
+    font-size: 40px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 46px;
+}
+.contenthedding h1::before {
+    content: "";
+    width: 213px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 478px;
+    bottom: 0;
+}
+
+.maincontent{
+
+    padding: 32px 0px;
+}
+
+.contentprera{
+
+    float: left;
+    width: 69%;
+    padding: 62px 0px;
+}
+
+.contentprera p{
+
+    color: white;
+    padding: 0px 185px;
+    margin-bottom: 12px;
+    line-height: 19px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contentimg{
+
+    float: left;
+    width: 20%;
+}
+
+.contentimg img{
+    
+}
+
+
+/* services section */
+
+.servicesection{
+    background-color: #606a64;
+
+}
+
+.mainservice{
+
+}
+.servicesitammain {
+    padding: 40px 22px;
+    
+}
+.servicehedding {
+    text-align: center;
+   
+}
+
+.servicehedding h1{
+    color: #e7ded9;
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 43px;
+    padding: 10px 0px;
+    position: relative;
+    padding-top: 34px;
+}
+.servicehedding h1::before {
+    content: "";
+    width: 213px;
+    height: 3px;
+    background-color: #e7ded9;
+    position: absolute;
+    left: 478px;
+    bottom: 0;
+}
+.servicehedding h2{
+    color: white;
+
+    font-size: 30px;
+    padding: 7px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.servicehedding p{
+    color: #d9d9d8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px 213px;
+}
+
+.servicecontent {
+    padding: 68px 0px;
+}
+
+.serviceitam{
+
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+    float: left;
+    margin-right: 53px;
+    box-sizing: border-box;
+}
+.serviceitam:last-child{
+    margin-right: 0px;
+}
+
+.serviceimg{
+
+    float: left;
+    height: 61px;
+    margin-right: 9px;
+    width: 15%;
+}
+
+.serviceimg img{
+
+}
+
+.serviceitamcont{
+
+    float: left;
+    width: 70%;
+}
+.serviceitamcont h3{
+
+    color: #506a85;
+    font-size: 25px;
+    padding-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.serviceitamcont p{
+    
+    color: #506a85;
+    font-size: 16px;
+    padding-bottom: 31px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* work section */
+
+.worksection{
+
+    background: #87a471;
+}
+
+.workmaincontent{
+
+}
+
+.workheddeing{
+
+    text-align: center;
+    padding-top: 25px;
+}
+
+.workheddeing h1{
+
+    color: white;
+    font-size: 39px;
+    padding: 15px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workheddeing p{
+
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workmainitam{
+
+    padding: 50px 0px;
+}
+
+.workitam{
+
+    width: 45%;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    margin-right: 90px;
+}
+.workitam:last-child{
+    margin-right: 0px;
+}
+.workitam img{
+
+    width: 100%;
+}
+
+.workitam p{
+
+    color: #617b7e;
+    font-size: 19px;
+    padding: 15px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workitam h6{
+    
+    color: white;
+    font-size: 15px;
+    padding-bottom: 6px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workimgsection {
+    padding: 25px 0px 100px 0px;
+}
+.workimgitam {
+    float: left;
+    margin-right: 22px;
+}
+
+.workimgitam img{
+
+}
+
+/* team member section */
+
+.teammembersection {
+    background: #5b9776;
+}
+.teammembermain{
+
+    /*! text-align: justify; */
+    margin: auto;
+}
+
+.teamheddeing {
+    text-align: center;
+    padding-top: 35px;
+}
+.teamheddeing h1{
+
+    font-size: 37px;
+    color: white;
+    padding: 15px 0px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.teamheddeing h1::before {
+    content: "";
+    width: 358px;
+    height: 3px;
+    background-color: #e7ded9;
+    position: absolute;
+    left: 405px;
+    bottom: 0;
+}
+
+.teamimgsection{
+
+}
+
+.teamigmgitam{
+
+    width: 21%;
+    text-align: center;
+    float: left;
+    margin-right: 14px;
+    margin-left: 105px;
+    padding: 38px 0px;
+}
+
+.teamigmgitam img{
+
+}
+
+
+.teamigmgitam ul{
+
+    text-align: center;
+    display: inline;
+}
+
+.teamigmgitam ul li{
+
+    display: inline-block;
+}
+
+.teamigmgitam ul li a{
+
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 7px;
+    padding: 10px 0px 21px 0px;
+    color: white;
+    transition: .4s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.teamigmgitam ul li a:hover{
+    color: yellow;
+
+}
+
+/* width us section */
+.withussection{
+
+    background: #606a64;
+}
+
+.widthusmain{
+
+    text-align: center;
+    padding: 141px 0px;
+}
+
+.widthusmain h1{
+
+    color: white;
+    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.widthusmain p{
+
+    color: #d3d4d3;
+    padding: 14px 287px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.widthusmain a{
+    
+    text-decoration: none;
+    color: white;
+    background: #00bc9c;
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 9px;
+    transition: .4s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.widthusmain a:hover{
+    background: #516b88;
+}
+
+/* fotter section */
+
+.fottersection{
+
+    background: #000000;
+}
+
+.fotter{
+
+    text-align: center;
+}
+
+.fotter p{
+    
+    color: white;
+    padding: 30px 0px;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+}
